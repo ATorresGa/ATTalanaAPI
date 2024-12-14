@@ -1,4 +1,5 @@
 ## Add
+- docker line comand in docker-compose
 
 ## Fix
 

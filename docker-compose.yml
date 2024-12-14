@@ -7,3 +7,5 @@ services:
       - "8080:5000"
     volumes:
       - .:/app
+
+##para ejecutar docker-compose up --build
