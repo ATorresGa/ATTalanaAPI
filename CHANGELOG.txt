@@ -1,0 +1,6 @@
+## Add
+
+## Fix
+
+## Update
+- endpoint directions of trivia and user

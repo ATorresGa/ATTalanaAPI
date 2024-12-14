@@ -7,7 +7,7 @@ from services.trivia_service import create_trivia, get_trivia_and_questions
 
 trivia_blueprint = Blueprint("trivia", __name__)
 
-@trivia_blueprint.route("/trivia/", methods = ["POST"])
+@trivia_blueprint.route("/create-trivia/", methods = ["POST"])
 def create_trivia_ep():
     try:
         data = request.get_json()

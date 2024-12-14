@@ -7,7 +7,7 @@ from services.user_service import create_user, get_users, check_user_credentials
 
 user_blueprint = Blueprint("user", __name__)
 
-@user_blueprint.route ("/users/", methods = ["POST"])
+@user_blueprint.route ("/create-user/", methods = ["POST"])
 def create_user_ep():
     try:
         data = request.get_json()
@@ -41,7 +41,7 @@ def login_ep():
         return jsonify({"message": "Login éxitoso"}), 200
     return jsonify({"error":"Credenciales no validas"}), 401
 
-@user_blueprint.route("/users/", methods=["GET"])
+@user_blueprint.route("/get-users/", methods=["GET"])
 # @login_required
 def get_users_ep():
     users = get_users()
